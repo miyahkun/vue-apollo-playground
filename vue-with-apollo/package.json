@@ -5,10 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "gen-graphql-response-types": "apollo client:codegen --target=typescript types"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.10",
+    "@vue/apollo-composable": "^4.0.0-alpha.16",
+    "@vue/composition-api": "^1.4.9",
+    "apollo": "^2.33.9",
     "core-js": "^3.6.5",
+    "graphql-tag": "^2.12.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {
